@@ -41,7 +41,7 @@ export const TodoList = () => {
       <Title variant="h6" textAlign="center">
         Things to do:
       </Title>
-      <div style={{ display: "flex" }}>
+      <div style={{ display: "flex", flexDirection: "column" }}>
         {todos.map((todoItem) => (
           <Checkbox
             label={todoItem.label}

@@ -11,9 +11,6 @@ const Wrapper = styled.div`
 `
 
 const Label = styled.label`
-  ${props => props.isChecked && css`
-    text-decoration: line-through;
-  `}
 `
 
 export const Checkbox = ({

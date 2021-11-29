@@ -35,9 +35,9 @@ const todosTemplate = [
 
 const TodosContextProvider = (props) => {
   const [todos, dispatch] = useReducer(todosReducer, []);
-  s
+
   return (
-    <TodosContext.Provider>
+    <TodosContext.Provider value={{ todos }}>
       {props.children}
     </TodosContext.Provider>
   );
